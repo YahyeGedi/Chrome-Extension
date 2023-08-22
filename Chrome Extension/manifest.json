@@ -1,0 +1,16 @@
+{
+"name": "Word of the Day!",
+"version": "0.01",
+"description": "Trying to increase your vocabulary by providing you new words to learn!",
+"chrome_url_overrides":{
+    "newtab": "newtab.html"
+},
+"background":{
+    "service_worker": "sw.js"
+},
+"manifest_version": 3
+
+
+
+
+}
