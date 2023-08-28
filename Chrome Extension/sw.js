@@ -14,7 +14,7 @@ chrome.runtime.onMessage.addListener((msg, sender, response) => {
                 return;
             }
             res.json().then(function(data){
-                response({word:data.word, speech:data.definitions.partOfSpeech, desc: data.note});
+                response({word:data.word, speech:data.definitions[1].partOfSpeech, desc: data.note});
             });
         }).catch(function(err) {
             response({word:'ERROR', speech:'ERROR',  desc: 'There was a problem in loading the Word of the Day'});
